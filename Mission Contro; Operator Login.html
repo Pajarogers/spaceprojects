@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--Paja Rogers, Mission Control; Operator, CCS102-->
+<html lang="en">
+  <script src="code4code.js"></script>
+  <!--link to Javascript-->
+    <link href= "loginStyle.css" rel="stylesheet" type= "text/css" />
+    <!--ccs file-->
+   <style>
+   body{
+     text-align:center;
+   }
+   </style>
+   <style>
+ form {
+text-align: left;
+}
+   </style>
+  
+<head>
+  <title>UAT Space Login</title>  
+</head>
+
+<body>
+  <h1>
+    Welcome to UAT Space
+    <br>
+    Please log in...
+  </h1>
+  <img src="space6a.png"  width="800" height="500">
+  <br>
+<p style=color:darkslateblue; id="loginStatus" class="texty">Mission Control<br>Opertor Login</p>
+<br>
+<style>
+  input[type=text]{
+    width:20%;
+    border:2px solid #aaa;
+    border-radius: 8px;
+    margin:8px;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:3s;
+  }
+
+  input[type=text]:focus{
+    border-color: rgb(10, 165, 131);
+    box-shadow:0 0 8px 0 rgb(10, 151, 128) ;
+  }
+</style>
+<style>
+  input[type=number]{
+    width:20%;
+    border:2px solid #aaa;
+
+    border-radius: 8px;
+    margin:8px;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:3s;
+  }
+  input[type=number]:focus{
+    border-color: rgb(38, 164, 202);
+    box-shadow:0 0 8px 0 rgb(61, 104, 139) ;
+  }
+</style>
+
+<!--button style and color-->
+<p id="loginStatus" class="loginID"> Status of login ...</p>
+ <form id id="credSumbit" onsubmit="return false"></form>
+     <!--starting a selection for the input comments-->
+     <br>
+  <input type = "text" id="firstName" placeholder="First Name"/>
+  <!--a text box for the input "first name"-->
+     <br>
+<br>
+    <input type ="text" id="lastName"placeholder="Last Name"/>
+    <!--a text box for the input "last name"-->
+     <br>
+
+   <input type="number" id="BadgeNumber" placeholder="Badge Number"/>
+     <!--a text box for the badge number"-->
+     <br>
+     <input type="submit" onclick="checkCreds();"/>
+  
+ </form>  
+
+</body>
+</html>

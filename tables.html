@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--Paja Rogers,CCS102-->
+
+<html>
+    <style>
+   body{
+    align-items:center;
+   }
+   </style>
+        <style>
+      form {
+     text-align: center;
+     }
+        </style> 
+        <!-- font and body align-->
+<head>
+    <!--links my javascript file to the html file-->
+    <script src="code.js"></script>
+    <!--This links my css file to this html-->
+    <link href="chartcolor.css" rel="stylesheet" type="text/css" />
+    <!--This is where my title for the webpage goes-->
+
+    <title>
+    </title>
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
+        <style>
+            h1 {text-align: center;}
+            h5 {text-align: center;}
+            p {text-align: center;}
+            div {text-align: center;}
+            </style>
+</head>
+<h1> UAT Space Program</h1>
+<body>
+   
+    <h5> UAT SPACE PROGRAM WAS PERFORMED IN 3 DIFFERENT STATE </h5>
+        <p id="state"></p>
+        <script>
+           var state= ["Arkansas 2018", "Arizona 2019", "Michigan 2020"];
+            document.getElementById("state").innerHTML=state;
+        </script>
+    <table class="SP">
+        <!--adding a table-->
+    
+            </td>
+        </tr>
+
+    </table>
+    <img src="space7.png"  class="center" width="250" height= "250">
+    <table id="data" border="2" width="100%">
+        <!--table and column size-->
+        <col style="width: 25%;">
+        <col style="width: 25;">
+        <thead>
+            <tr style="font-family: fantasy;">
+                <th>Data Type</th>
+                <th>Reading</th>
+            
+            </tr>
+        </thead>
+        <tbody style="font-weight: bolder;">
+            <!--table style-->
+            <tr id="seconds"><td>Time Elaspsed:</td><td>15 seconds</td></tr>
+            <!--information in the table rows-->
+            <tr id="latitude"><td>Latitude:</td><td>0</td></tr>
+            <!--information in the table rows-->
+            <tr id="longitude"><td>longitude:</td><td>0</td></tr>
+            <!--information in the table rows-->
+            <tr id="gps_altitude"><td>GPS Altitude</td><td>0</td></tr>
+            <!--information in the table rows-->
+            <tr id="bmpSensor_altitude"><td>BMP Senors Altitude:</td><td>30383.04</td></tr>
+            <!--information in the table rows-->
+            <tr id="bmpSensor_pressure"><td>BMP Sensor Pressure:</td><td>2.34</td></tr>
+            <tr id="bmpSensor_temp"><td>BMP Sensor Temp:</td><td>0</td></tr>
+            <tr id="bdigSensor_temp"><td>Digital Sensor Temp:</td><td>24.12</td></tr>
+            <tr id="cssSensor_temp"><td>CSS Sensor Temp:</td><td>25</td></tr>
+            <tr id="cssSensor_eCO2"><td>CSS Sensor eCO2:</td><td>400</td></tr>
+            <tr id="cssSensor_TVOC"><td>CSS Sensor TVOC:</td><td>0</td></tr>
+            <tr id="UV"><td>UV:</td><td>0</td></tr>
+            <tr id="accelX"><td>accelX:</td><td>-0.87</td></tr>
+            <tr id="accelY"><td>accelY:</td><td>-0.02</td></tr>
+            <tr id="accelZ"><td>accelZ:</td><td>9.61</td></tr>
+            <tr id="gyroX"><td>gyroX:</td><td>0.13</td></tr>
+            <tr id="gyroY"><td>gyroY:</td><td>0.57</td></tr>
+            <tr id="gyroZ"><td>gyroY:</td><td>-0.24</td></tr>
+            <tr id="magneticX"><td>magneticX:</td><td>4.66</td></tr>
+            <tr id="magneticY"><td>magneticY:</td><td>0.01</td></tr>
+            <tr id="magneticZ"><td>magneticZ:</td><td>-0.4</td></tr>
+            
+        </tbody>
+    </table>  
+    <form action="/action_page.php">
+        <!--Pull down menu-->
+        <label for="State">State:</label>
+        <select name="state for program" id="state">
+          <option value="Arkansas">Arkansas</option>
+          <option value="Arizona">Arizona</option>
+          <option value="Michigan">Michigan</option>
+    
+        </select>
+    
+      </form>
+      <!--button commands-->
+    <button onclick="start(); playStation();" class="funWithButtons" id="startButton">Start</button>
+    <button class="funWithButtons" onclick="stop(); loadData()" id="stopButton" disabled=true>Stop</button>
+ 
+</body>
+
+</html>

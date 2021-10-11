@@ -1,0 +1,27 @@
+   body {
+       width:1000px;
+      height: 1000px;
+background: linear-gradient(to left, rgb(69, 69, 113), white, rgb(206, 53, 226));
+align-items: center;
+text-decoration-color: rgb(163, 159, 187);
+
+   }
+    img{ 
+
+      box-shadow: rgb(86, 63, 190);
+   }
+
+   button {
+      width:10%;
+      border:2px solid #aaa;
+      border-radius: 8px;
+      margin:4px;
+      outline:none;
+      padding:8px;
+      box-sizing:border-box;
+      transition:3s;
+      text-align: center;
+      align-content: center;
+      align-self: auto;
+   }
+  
